@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <defs>
+    <linearGradient id="night" x1="38" y1="18" x2="880" y2="690" gradientUnits="userSpaceOnUse"><stop stop-color="#0D2B20"/><stop offset="1" stop-color="#09251C"/></linearGradient>
+    <linearGradient id="sun" x1="710" y1="74" x2="832" y2="198" gradientUnits="userSpaceOnUse"><stop stop-color="#E4F69D"/><stop offset="1" stop-color="#B6DE69"/></linearGradient>
+    <linearGradient id="land" x1="170" y1="300" x2="740" y2="516" gradientUnits="userSpaceOnUse"><stop stop-color="#4C9B5C"/><stop offset="1" stop-color="#267144"/></linearGradient>
+    <linearGradient id="soil" x1="278" y1="348" x2="668" y2="493" gradientUnits="userSpaceOnUse"><stop stop-color="#74482F"/><stop offset="1" stop-color="#4A2D21"/></linearGradient>
+    <linearGradient id="crop" x1="330" y1="337" x2="622" y2="482" gradientUnits="userSpaceOnUse"><stop stop-color="#D8F37E"/><stop offset="1" stop-color="#A7D64F"/></linearGradient>
+    <filter id="shadow" x="52" y="500" width="856" height="140" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="10"/></filter>
+    <pattern id="seed-row" width="29" height="19" patternUnits="userSpaceOnUse" patternTransform="rotate(29)"><circle cx="7" cy="9" r="3.3" fill="#F0F9C2"/><circle cx="21" cy="9" r="3.3" fill="#E6F6AB"/></pattern>
+  </defs>
+  <rect width="960" height="720" rx="22" fill="url(#night)"/>
+  <circle cx="790" cy="142" r="94" fill="#D4F18B" fill-opacity=".09"/>
+  <circle cx="790" cy="142" r="59" fill="url(#sun)"/>
+  <g fill="#34704B" opacity=".72"><ellipse cx="618" cy="112" rx="43" ry="13"/><ellipse cx="650" cy="105" rx="36" ry="17"/><ellipse cx="678" cy="111" rx="25" ry="10"/><ellipse cx="346" cy="182" rx="38" ry="12"/><ellipse cx="374" cy="174" rx="31" ry="15"/><ellipse cx="398" cy="181" rx="21" ry="9"/></g>
+  <ellipse cx="481" cy="625" rx="359" ry="32" fill="#03170F" opacity=".75" filter="url(#shadow)"/>
+  <!-- Raised farm platform: top plane and visible front faces create the isometric depth. -->
+  <path d="M126 414 480 216 834 414 480 612 126 414Z" fill="url(#land)"/>
+  <path d="M126 414 480 612v34L126 448v-34Z" fill="#28613C"/>
+  <path d="M480 612 834 414v34L480 646v-34Z" fill="#194E32"/>
+  <path d="M149 414 480 231 812 414 480 596 149 414Z" stroke="#8CCB72" stroke-opacity=".32" stroke-width="13"/>
+  <!-- Field border and dark earth between the crop beds. -->
+  <path d="M245 422 480 289 716 422 480 555 245 422Z" fill="#34251D"/>
+  <path d="M259 422 480 297 701 422 480 547 259 422Z" fill="url(#soil)"/>
+  <g stroke="#9B6841" stroke-width="2" opacity=".72">
+    <path d="m275 413 220 124M320 387l221 125M365 362l221 125M410 336l221 125M455 310l221 125"/>
+  </g>
+  <!-- Five raised crop beds with small planted seedlings. -->
+  <g fill="url(#crop)" stroke="#E4F5A6" stroke-opacity=".65" stroke-width="2">
+    <path d="m279 421 45-25 149 84-45 25-149-84Z"/>
+    <path d="m335 389 45-25 149 84-45 25-149-84Z"/>
+    <path d="m391 357 45-25 149 84-45 25-149-84Z"/>
+    <path d="m447 325 45-25 149 84-45 25-149-84Z"/>
+    <path d="m503 293 45-25 149 84-45 25-149-84Z"/>
+  </g>
+  <g fill="url(#seed-row)" opacity=".95">
+    <path d="m285 419 34-19 143 81-34 19-143-81Z"/>
+    <path d="m341 387 34-19 143 81-34 19-143-81Z"/>
+    <path d="m397 355 34-19 143 81-34 19-143-81Z"/>
+    <path d="m453 323 34-19 143 81-34 19-143-81Z"/>
+    <path d="m509 291 34-19 143 81-34 19-143-81Z"/>
+  </g>
+  <!-- Small farm shed and grain silo. -->
+  <path d="m314 313 40-27 37 25-39 25-38-23Z" fill="#A8332A"/>
+  <path d="m314 313 38 23v42l-38-21v-44Z" fill="#D94B3D"/>
+  <path d="m352 336 39-25v43l-39 24v-42Z" fill="#B63B30"/>
+  <path d="m332 338 11 7v22l-11-7v-22Z" fill="#F3E7C7"/>
+  <path d="M407 286c0-6 7-11 15-11s15 5 15 11v39c0 7-7 12-15 12s-15-5-15-12v-39Z" fill="#B9C9AC"/>
+  <ellipse cx="422" cy="286" rx="15" ry="8" fill="#DCE5CE"/>
+  <path d="M407 286c4 4 9 5 15 5s11-1 15-5" stroke="#EEF3E3" stroke-width="3"/>
+  <!-- Orchard trees sit on the platform surface. -->
+  <g>
+    <path d="M194 432v30m45-4v26m489-49v30m43-53v31" stroke="#71482E" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="194" cy="421" r="19" fill="#50AD61"/><circle cx="239" cy="447" r="16" fill="#58B56A"/>
+    <circle cx="728" cy="434" r="16" fill="#58B56A"/><circle cx="771" cy="411" r="20" fill="#50AD61"/>
+    <circle cx="188" cy="415" r="7" fill="#76CB78" fill-opacity=".55"/><circle cx="765" cy="405" r="8" fill="#76CB78" fill-opacity=".55"/>
+  </g>
+  <!-- Location marker over the registered plot. -->
+  <circle cx="480" cy="222" r="24" fill="#0B7658" stroke="white" stroke-width="8"/>
+  <circle cx="480" cy="222" r="6" fill="white"/>
+</svg>
